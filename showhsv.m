@@ -1,0 +1,14 @@
+function showhsv(imgname);
+img = imread(imgname);
+img = rgb2hsv(img);
+h = img(:,:,1);
+s = img(:,:,2);
+v = img(:,:,3);
+figure(1);
+imshow(h);
+figure(2);
+imshow(s);
+figure(3);
+imshow(v);
+figure(4);
+imshow(img);
